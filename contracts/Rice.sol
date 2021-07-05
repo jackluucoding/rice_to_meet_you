@@ -1,13 +1,8 @@
 pragma solidity 0.8.6;
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+import "@openzeppelin/contracts/token/ERC20/presets/ERC20PresetFixedSupply.sol";
 
-contract Rice is ERC20 {
-
-constructor(uint256 _supply) ERC20("Ricetomeetyou", "RICE") public {
-    _mint(msg.sender, _supply * (10 ** decimals()));
+contract Rice is ERC20PresetFixedSupply {
+    constructor() ERC20PresetFixedSupply("Ricetomeetyou", "Rice", 1000000 * 10 ** 18, msg.sender) {
     }
-   
-    
-
 }
