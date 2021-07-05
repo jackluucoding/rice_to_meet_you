@@ -1,0 +1,21 @@
+{
+  "name": "rice_to_meet_you",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "openzeppelin-solidity": "^4.2.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.2.0",
+    "solc": "^0.8.6"
+  }
+}
